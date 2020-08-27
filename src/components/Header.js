@@ -9,8 +9,8 @@ class Header extends React.Component {
             <header id="header">
                 <div className="inner">
                     <Link to="/" className="image avatar"><img src={avatar} alt="" /></Link>
-                    <h1>A super simple responsite site<br />template <strong>powered by <a href="https://conradlin.com/blog/posts/host-gatsbyjs-blog-with-notion-cms-and-netlify-for-free/" target="_blank">Notion</a></strong>,<br /> 
-                    crafted by <a href="https://conradlin.com" target="_blank">Conrad Lin</a>.</h1>
+                    <h1><strong>COMPRO ORO LASCARI <br />acquistiamo e valutiamo oro, argento e preziosi <a href="http://maps.google.com/?q=via Alcide de Gasperi, 64 Lascari, PA 90010 Italia/@38.000296,13.9391984" target="_blank">a Lascari (Palermo)</a>. <br /> 
+                    Dal <a href="https://1000sunny.social" target="_blank">1960</a>.</strong></h1>
                 </div>
                 <Footer />
             </header>
