@@ -5,6 +5,13 @@ module.exports = {
     description: "A Gatsby.js Starter based on Strata by HTML5 UP"
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-iubenda-cookie-footer',
+      options: {
+        iubendaOptions: {"lang":"it","siteId":XXXXX,"cookiePolicyId":YYYYY, /* ... */ },
+        googleTagManagerOptions: true
+      }
+  },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

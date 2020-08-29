@@ -4,10 +4,6 @@ import { Link } from "gatsby";
 
 import Layout from '../components/layout'
 
-const ScrollToLink = () => (
-    <Link to="/#three">Scroll To My Cool Header</Link>
-  )
-
 class HomeIndex extends React.Component {
 
     render() {
