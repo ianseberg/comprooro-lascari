@@ -29,7 +29,7 @@ class HomeIndex extends React.Component {
                         </header>
                         <p>Presenti da oltre 60 anni sul territorio, vicini alle vostre esigenze; i valori che ci differenziano e ci hanno contraddistinto: affidabilità, correttezza, serietà e riservatezza.<br />Lorem ipsum <a href="https://google.com" target="_blank">dolor sit amet, consectetur adipiscing elit, sed do</a> eiusmod tempor incididunt ut labore <a href="http://www.lbma.org.uk/" target="_blank">et dolore magna aliqua.</a></p>
                         <ul className="actions">
-                            <li><Link to={`#three`} target="_blank" className="button">Dicci di cosa hai bisogno</Link></li>
+                            <li><a href={`#three`} target="_blank" className="button">Dicci di cosa hai bisogno</a></li>
                         </ul>
                     </section>
 
