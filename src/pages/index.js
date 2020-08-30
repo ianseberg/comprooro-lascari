@@ -58,8 +58,8 @@ class HomeIndex extends React.Component {
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-                                <input type="hidden" name="bot-field" />
-                                <input type="hidden" name="form-name" value="contact" />
+                                    <input type="hidden" name="bot-field" />
+                                    <input type="hidden" name="form-name" value="contact" />
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Telefono od Email" /></div>
@@ -74,7 +74,7 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Indirizzo</span></h3>
-                                        <a href="http://maps.google.com/?q=via Alcide de Gasperi, 64 Lascari, PA 90010 Italia/@38.000296,13.9391984">
+                                        <a href="http://https://www.google.com/maps/place/COMPRO+ORO+LASCARI/@38.00042,13.9364313,17z/data=!3m1!4b1!4m5!3m4!1s0x13173983d6622ba9:0x9600abd2456a278a!8m2!3d38.00042!4d13.93862">
                                         Vieni a trovarci in<br />
                                         via Alcide de Gasperi, 64<br />
                                         Lascari, PA 90010<br />
