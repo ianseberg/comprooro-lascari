@@ -46,18 +46,6 @@ module.exports = {
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-notion-database`,
-      options: {
-        sourceConfig: [
-          {
-            name: 'posts',
-            table: 'https://www.notion.so/Blog-Compro-Oro-Lascari-c83951da3f0d4298854c42685cd4ae3d',
-            cacheType: 'html'
-          }
-        ]
-      }
-    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
