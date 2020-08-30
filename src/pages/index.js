@@ -57,7 +57,9 @@ class HomeIndex extends React.Component {
                         <p>Per informazioni o per prenotare degli appuntamenti per valutazioni compila il form qui sotto oppure chiamaci o mandaci una mail. Cliccando sull'indirizzo potrai invece vedere dove ci troviamo!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="#">
+                                <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+                                <input type="hidden" name="bot-field" />
+                                <input type="hidden" name="form-name" value="contact" />
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Telefono od Email" /></div>
@@ -84,7 +86,7 @@ class HomeIndex extends React.Component {
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="mailto:comproorolascari@gmail.com">Scrivici su comproorolascari@gmail.com</a>
+                                        <a href="https://m.me/comprorolascari">Scrivici su Facebook Messenger</a>
                                     </li>
                                 </ul>
                             </div>
