@@ -52,7 +52,7 @@ module.exports = {
         sourceConfig: [
           {
             name: 'posts',
-            table: 'https://www.notion.so/conradlin/1aa283fcd5ae4a73ba0f73c062de745e?v=6a40014bee144152b55203e2caf0c02e',
+            table: 'https://www.notion.so/Blog-Compro-Oro-Lascari-c83951da3f0d4298854c42685cd4ae3d',
             cacheType: 'html'
           }
         ]
