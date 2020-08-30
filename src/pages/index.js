@@ -57,7 +57,7 @@ class HomeIndex extends React.Component {
                         <p>Per informazioni o per prenotare degli appuntamenti per valutazioni compila il form qui sotto oppure chiamaci o mandaci una mail. Cliccando sull'indirizzo potrai invece vedere dove ci troviamo!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+                                <form name="contact" method="post" action="/sucess" netlify-honeypot="bot-field" data-netlify="true">
                                     <input type="hidden" name="bot-field" />
                                     <input type="hidden" name="form-name" value="contact" />
                                     <div className="row uniform 50%">
@@ -74,7 +74,7 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Indirizzo</span></h3>
-                                        <a href="http://https://www.google.com/maps/place/COMPRO+ORO+LASCARI/@38.00042,13.9364313,17z/data=!3m1!4b1!4m5!3m4!1s0x13173983d6622ba9:0x9600abd2456a278a!8m2!3d38.00042!4d13.93862">
+                                        <a href="https://www.google.com/maps/place/COMPRO+ORO+LASCARI/@38.00042,13.9364313,17z/data=!3m1!4b1!4m5!3m4!1s0x13173983d6622ba9:0x9600abd2456a278a!8m2!3d38.00042!4d13.93862">
                                         Vieni a trovarci in<br />
                                         via Alcide de Gasperi, 64<br />
                                         Lascari, PA 90010<br />
