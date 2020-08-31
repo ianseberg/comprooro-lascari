@@ -1,10 +1,45 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 import Layout from '../components/layout'
 
 class HomeIndex extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.ContactForm = React.createRef()
+        this.state = {
+          name: "",
+          email: "",
+          message: "",
+        }
+      }
+      encode = data => {
+        return Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&")
+      }
+      handleSubmit = event => {
+        event.preventDefault()
+        const form = this.ContactForm.current
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: this.encode({
+            "form-name": form.getAttribute("name"),
+            ...this.state,
+          }),
+        })
+          .then(() => navigate("/success"))
+          .catch(error => alert(error))
+    
+        this.setState({
+          name: "",
+          email: "",
+          message: "",
+        })
+      }
 
     render() {
         const siteTitle = "Compro Oro e Argento - Lascari (Palermo)"
@@ -58,7 +93,7 @@ class HomeIndex extends React.Component {
                             <div className="8u 12u$(small)">
                                 <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                                     <input type="hidden" name="bot-field" />
-                                    <input type="hidden" name="direct-contact" value="contact" />
+                                    <input type="hidden" name="form-name" value="contact" />
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Telefono od Email" /></div>
@@ -76,7 +111,7 @@ class HomeIndex extends React.Component {
                                         <a href="https://www.google.com/maps/place/COMPRO+ORO+LASCARI/@38.00042,13.9364313,17z/data=!3m1!4b1!4m5!3m4!1s0x13173983d6622ba9:0x9600abd2456a278a!8m2!3d38.00042!4d13.93862">
                                         Vieni a trovarci in<br />
                                         via Alcide de Gasperi, 64<br />
-                                        Lascari, PA 90010<br />
+                                        Lascari, Palermo 90010<br />
                                         Italia</a>
                                     </li>
                                     <li>
