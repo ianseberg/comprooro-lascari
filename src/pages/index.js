@@ -30,17 +30,16 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="two">
-                        <h2>Informazioni</h2>
-                        <h3>Orari di apertura</h3>
-                        lun:	16:30–19:30<br />
+                        <h3><strong>Informazioni Compro Oro Lascari</strong></h3>
+                        <h4>Orari di apertura</h4>
+                        <strong>lun:	16:30–19:30</strong><br />
                         mar:	09:30–13:00, 16:30–19:30<br />
-                        mer:	09:30–13:00, 16:30–19:30<br />
+                        <strong>mer:	09:30–13:00, 16:30–19:30</strong><br />
                         gio:	09:30–13:00, 16:30–19:30<br />
-                        ven:	09:30–13:00, 16:30–19:30<br />
+                        <strong>ven:	09:30–13:00, 16:30–19:30</strong><br />
                         sab:	09:30–13:00, 16:30–19:30<br />
-                        dom:	Chiuso<br />
-                        <br />
-                        <br />
+                        <strong>dom:	Chiuso</strong><br />
+                        <hr/>
                         <h2>La quotazione più alta del comprensorio per oro ed argento</h2>
                         
 
@@ -57,7 +56,7 @@ class HomeIndex extends React.Component {
                         <p>Per informazioni o per prenotare degli appuntamenti per valutazioni compila il form qui sotto oppure chiamaci o mandaci una mail. Cliccando sull'indirizzo potrai invece vedere dove ci troviamo!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form name="contact" method="post" action="/sucess" netlify-honeypot="bot-field" data-netlify="true">
+                                <form name="contact" method="post" action="/success" data-netlify-honeypot="bot-field" data-netlify="true">
                                     <input type="hidden" name="bot-field" />
                                     <input type="hidden" name="form-name" value="contact" />
                                     <div className="row uniform 50%">
@@ -83,6 +82,10 @@ class HomeIndex extends React.Component {
                                     <li>
                                         <h3 className="icon fa-mobile"><span className="label">Telefono</span></h3>
                                         <a href="tel:+393339253880">Chiamaci al 3339253880</a>
+                                    </li>
+                                    <li>
+                                        <h3 className="icon fa-whatsapp"><span className="label">Whatsapp</span></h3>
+                                        <a href="https://api.whatsapp.com/send?phone=393339253880">Scrivici su Whatsapp</a>
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
