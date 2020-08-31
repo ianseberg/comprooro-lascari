@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Compro Oro Lascari",
+    title: "Compro Oro e Argento - Lascari (Palermo)",
     author: "1000 Sunny",
     description: "A Gatsby.js Starter based on Strata by HTML5 UP"
   },
@@ -33,6 +33,15 @@ module.exports = {
         routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/images`,
+        name: 'images'
+      }
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

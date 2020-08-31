@@ -1,13 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
-
-import pic11 from '../assets/images/pic11.jpg';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const Success = props => (
   <Layout>
     <Helmet>
-      <title>Success Page</title>
+      <title>Pagina di ringraziamento</title>
       <meta name="description" content="Success Page" />
     </Helmet>
 
@@ -15,12 +15,12 @@ const Success = props => (
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h1>Success/Thank You Page</h1>
+            <h1>Grazie per averci contattato per informazioni, un appuntamento od una quotazione di oro od argento!</h1>
           </header>
           <span className="image main">
-            <img src={pic11} alt="" />
+            <Img fluid={props.data.imageOne.childImageSharp.fluid} />
           </span>
-          <p>Thank you for contacting us!</p>
+          <p>Modulo inviato!</p>
         </div>
       </section>
     </div>
@@ -28,3 +28,15 @@ const Success = props => (
 );
 
 export default Success;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "pic11.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

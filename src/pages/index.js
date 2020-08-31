@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
+        const siteTitle = "Compro Oro e Argento - Lascari (Palermo)"
         const siteDescription = "Site description"
 
         return (
@@ -56,7 +56,7 @@ class HomeIndex extends React.Component {
                         <h4>Per informazioni o per prenotare degli appuntamenti per valutazioni compila il form qui sotto oppure chiamaci o mandaci una mail. Cliccando sull'indirizzo potrai invece vedere dove ci troviamo!</h4>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form name="contact" method="post" action="/success" data-netlify-honeypot="bot-field" data-netlify="true">
+                                <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                                     <input type="hidden" name="bot-field" />
                                     <input type="hidden" name="direct-contact" value="contact" />
                                     <div className="row uniform 50%">
