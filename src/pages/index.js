@@ -52,13 +52,13 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="three">
-                        <h2>Contattaci</h2>
-                        <p>Per informazioni o per prenotare degli appuntamenti per valutazioni compila il form qui sotto oppure chiamaci o mandaci una mail. Cliccando sull'indirizzo potrai invece vedere dove ci troviamo!</p>
+                        <h3>Contattaci</h3>
+                        <h4>Per informazioni o per prenotare degli appuntamenti per valutazioni compila il form qui sotto oppure chiamaci o mandaci una mail. Cliccando sull'indirizzo potrai invece vedere dove ci troviamo!</h4>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form name="contact" method="post" action="/success" data-netlify-honeypot="bot-field" data-netlify="true">
                                     <input type="hidden" name="bot-field" />
-                                    <input type="hidden" name="form-name" value="contact" />
+                                    <input type="hidden" name="direct-contact" value="contact" />
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Nome" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Telefono od Email" /></div>
