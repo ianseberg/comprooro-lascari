@@ -42,7 +42,7 @@ class HomeIndex extends React.Component {
 
   render() {
     const siteTitle = 'Compro Oro e Argento - Lascari (Palermo)'
-    const siteDescription = 'Site description'
+    const siteDescription = 'Compro Oro Lascari (Palermo) è specializzata nella compravendita di oro, argento e oggetti preziosi. Da oltre 60 anni, riusciamo sempre a fornire la migliore quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in tempo reale con il fixing di Londra'
 
     return (
       <Layout>
@@ -60,19 +60,19 @@ class HomeIndex extends React.Component {
             </header>
             <p>
               <hr />
-              <h3>Compro Oro Lascari è un'azienda amministrata
+              <h3>Compro Oro Lascari (Palermo) è un'azienda amministrata
                 da professionisti seri ed affidabili, specializzati nella
                 compravendita di oro, argento e oggetti preziosi, anche di
                 marca. Da oltre 60 anni, riusciamo sempre a fornire la migliore
-                quotazione relativa a tutti i metalli preziosi, aggiornata in
+                quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in
                 tempo reale con il <a href="http://www.lbma.org.uk/" target="_blank">
                 fixing di Londra</a>.
                 <br />Scopri quanto vale il tuo oro usato in tempo reale e senza
-              impegno. Scopri la migliore quotazione sul mercato.{' '}
+              impegno. Ricevi la migliore quotazione sul mercato.{' '}
               <a href="http://www.https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
                 Quotazioni Aggiornate
               </a>
-              . Ritiro Contanti Immediato.</h3>
+              . Ritiro Contanti Immediato (fino a 499€).</h3>
               <h5>Presenti da oltre 60 anni sul territorio, vicini alle vostre
               esigenze; i valori che ci differenziano e ci hanno
               contraddistinto: affidabilità, correttezza, serietà e
