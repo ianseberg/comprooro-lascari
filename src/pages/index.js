@@ -26,7 +26,7 @@ class HomeIndex extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'contact': form.getAttribute('name'),
+        'contattaci': form.getAttribute('name'),
         ...this.state,
       }),
     })
@@ -143,7 +143,7 @@ class HomeIndex extends React.Component {
             <div className="row">
               <div className="8u 12u$(small)">
                 <form
-                  name="contact"
+                  name="contattaci"
                   method="POST"
                   action="/success"
                   data-netlify="true"
