@@ -713,7 +713,7 @@ class PrivacyPolicy extends React.Component {
             14 del Regolamento (UE) 2016/679. Ove non diversamente specificato,
             questa informativa privacy riguarda esclusivamente questo Sito Web.
             <br />Ultima modifica: 24 luglio 2020
-          </section>
+          </p></section>
           <section id="two">
             <strong>Termini e Condizioni:</strong>
             <br />

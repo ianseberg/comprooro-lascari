@@ -56,26 +56,26 @@ class HomeIndex extends React.Component {
             <header className="major">
               <h2>
                 Lo specialista nella compravendita di oro, argento e metalli
-                preziosi, anche di marca. Oro Express è una società amministrata
+                preziosi, anche di marca. Compro Oro Lascari è un'azienda amministrata
                 da professionisti seri ed affidabili, specializzati nella
                 compravendita di oro, argento e oggetti preziosi, anche di
                 marca. Da oltre 60 anni, riusciamo sempre a fornire la migliore
                 quotazione relativa a tutti i metalli preziosi, aggiornata in
-                tempo reale con il fixing di Londra.
-              </h2>
+                tempo reale con il <a href="http://www.lbma.org.uk/" target="_blank">
+                fixing di Londra</a>.</h2>
             </header>
             <p>
-              Presenti da oltre 60 anni sul territorio, vicini alle vostre
-              esigenze; i valori che ci differenziano e ci hanno
-              contraddistinto: affidabilità, correttezza, serietà e
-              riservatezza.
-              <br />
-              <h2>Scopri quanto vale il tuo oro usato in tempo reale e senza
+              <hr />
+              <h3>Scopri quanto vale il tuo oro usato in tempo reale e senza
               impegno. Scopri la migliore quotazione sul mercato.{' '}
-              <a href="http://www.lbma.org.uk/" target="_blank">
+              <a href="http://www.https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
                 Quotazioni Aggiornate
               </a>
-              . Ritiro Contanti Immediato.</h2>
+              . Ritiro Contanti Immediato.</h3>
+              <h5>Presenti da oltre 60 anni sul territorio, vicini alle vostre
+              esigenze; i valori che ci differenziano e ci hanno
+              contraddistinto: affidabilità, correttezza, serietà e
+              riservatezza.</h5>
             </p>
             <ul className="actions">
               <li>
