@@ -148,9 +148,9 @@ class HomeIndex extends React.Component {
                   method="POST"
                   data-netlify="true"
                   action="/pages/success"
-                  netlify netlify-honeypot="bot-field" hidden
+                  netlify-honeypot="bot-field"
                 >
-                  <input type="hidden" name="form-name" value="contattaci" />
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
