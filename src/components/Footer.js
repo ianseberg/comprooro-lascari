@@ -12,7 +12,7 @@ class Footer extends React.Component {
                         <li><a href="https://m.me/comprorolascari" target="_blank" className="icon fa-envelope-o "><span className="label">Facebook Messenger</span></a></li>
                     </ul>
                     <ul className="copyright">
-                        <li>&copy; Compro Oro Lascari • <a href="/privacypolicy">Privacy Policy</a></li><li>Design: <a href="http://1000sunny.social">1000 Sunny</a></li>
+                        <li>&copy; Compro Oro Lascari • <a href="/privacypolicy">Privacy Policy</a></li><li>Design: <a href="https://1000sunny.social">1000 Sunny</a></li>
                     </ul>
                 </div>
             </div>
