@@ -18,7 +18,7 @@ class Header extends React.Component {
                 acceptOnScroll={true}
                 acceptOnScrollPercentage={20}
                 onAccept={() => {
-                  alert("consent given");
+                  alert("Consenso concesso");
                 }}
           location="top"
           buttonText="Accetta"
