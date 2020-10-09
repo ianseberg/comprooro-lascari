@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "gatsby";
 import Footer from './Footer'
 import avatar from '../assets/images/avatar.png'
+import CookieConsent from 'react-cookie-consent';
 
 class Header extends React.Component {
     render() {
@@ -13,6 +14,18 @@ class Header extends React.Component {
                     Dal <a href="https://1000sunny.social" target="_blank">1959</a>.</strong></h1>
                 </div>
                 <Footer />
+                <CookieConsent
+                acceptOnScroll={true}
+                acceptOnScrollPercentage={20}
+                onAccept={() => {
+                  alert("consent given");
+                }}
+          location="top"
+          buttonText="Accetta"
+          declineButtonText="Non accettare"
+          cookieName="gatsby-gdpr-google-tagmanager">
+Questo sito utilizza dei Cookies per rendere la navigazione il migliore possibile
+</CookieConsent>
             </header>
         )
     }
