@@ -11,7 +11,7 @@ class Header extends React.Component {
                 <div className="inner">
                     <Link to="/" className="image avatar"><img src={avatar} alt="" /></Link>
                     <h1><strong>COMPRO ORO LASCARI <br />acquistiamo e valutiamo oro, argento e preziosi <a href="http://maps.google.com/?q=via Alcide de Gasperi, 64 Lascari, PA 90010 Italia/@38.000296,13.9391984" target="_blank">a Lascari (Palermo)</a>. <br /> 
-                    Dal <a href="https://1000sunny.social" target="_blank">1959</a>.</strong></h1>
+                    Dal 1959</a>.</strong></h1>
                 </div>
                 <Footer />
                 <CookieConsent

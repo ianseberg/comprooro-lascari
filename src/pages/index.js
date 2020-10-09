@@ -26,7 +26,7 @@ class HomeIndex extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'form-name': form.getAttribute('name'),
+        'form-name': form.getAttribute('form'),
         ...this.state,
       }),
     })
@@ -227,7 +227,7 @@ class HomeIndex extends React.Component {
                     </a>
                   </li>
                   <li>
-                    <h3 className="icon fa-envelope-o">
+                    <h3 className="icon fa-facebook-square">
                       <span className="label">Email</span>
                     </h3>
                     <a href="https://m.me/comprorolascari">
