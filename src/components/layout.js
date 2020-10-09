@@ -1,6 +1,5 @@
 import React from 'react'
 import '../assets/scss/main.scss'
-import CookieConsent from 'react-cookie-consent';
 
 import Header from './Header'
 

@@ -14,7 +14,7 @@ class HomeIndex extends React.Component {
       message: '',
     }
   }
-  encode = (data) => {
+  encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&');
@@ -23,14 +23,14 @@ class HomeIndex extends React.Component {
     event.preventDefault()
     const form = this.ContactForm.current
     fetch("/", {
-      method: 'post',
+      method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'form-name': form.getAttribute('form-name'),
+        'form-name': form.getAttribute('name'),
         ...this.state,
       }),
     })
-      .then(() => navigate('/pages/success'))
+      .then(() => navigate('/success'))
       .catch(error => alert(error))
 
     this.setState({
@@ -146,7 +146,7 @@ class HomeIndex extends React.Component {
                 <form
                   name="contact" 
                   form-name="contact" 
-                  method="post"
+                  method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                   action="/pages/success"
@@ -185,6 +185,12 @@ class HomeIndex extends React.Component {
                       type="submit"
                       value="Invia"
                       classname="button"
+                      name="contact" 
+                      form-name="contact" 
+                      method="post"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                      action="/success"
                     />
                   </li>
                 </ul>
