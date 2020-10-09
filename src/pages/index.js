@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 class HomeIndex extends React.Component {
   constructor(props) {
     super(props)
-    this.ContattaciForm = React.createRef()
+    this.ContactForm = React.createRef()
     this.state = {
       name: '',
       email: '',
@@ -21,16 +21,16 @@ class HomeIndex extends React.Component {
   }
   handleSubmit = event => {
     event.preventDefault()
-    const form = this.ContattaciForm.current
+    const form = this.ContactForm.current
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'contattaci': form.getAttribute('name'),
+        'contact': form.getAttribute('name'),
         ...this.state,
       }),
     })
-      .then(() => navigate('/success'))
+      .then(() => navigate('/pages/success'))
       .catch(error => alert(error))
 
     this.setState({
@@ -81,7 +81,7 @@ class HomeIndex extends React.Component {
             </p>
             <ul className="actions">
               <li>
-                <a href={`#contattaci`} target="_blank" className="button">
+                <a href={`#contact`} target="_blank" className="button">
                   Dicci di cosa hai bisogno
                 </a>
               </li>
@@ -133,7 +133,7 @@ class HomeIndex extends React.Component {
             </ul>
           </section>
 
-          <section id="contattaci">
+          <section id="contact">
             <h3>Contattaci</h3>
             <h4>
               Per informazioni o per prenotare degli appuntamenti per
@@ -144,10 +144,11 @@ class HomeIndex extends React.Component {
             <div className="row">
               <div className="8u 12u$(small)">
                 <form
-                  name="contattaci"
+                  name="contact"
                   method="POST"
                   data-netlify="true"
-                  action="/success"
+                  action="/pages/success"
+                  netlify netlify-honeypot="bot-field" hidden
                 >
                   <input type="hidden" name="form-name" value="contattaci" />
                   <div className="row uniform 50%">
@@ -183,7 +184,6 @@ class HomeIndex extends React.Component {
                       type="submit"
                       value="Invia"
                       classname="button"
-                      action="/success"
                     />
                   </li>
                 </ul>
