@@ -7,17 +7,16 @@ import Layout from '../components/layout'
 class HomeIndex extends React.Component {
   constructor(props) {
     super(props)
-    this.ContactForm = React.createRef()
     this.state = {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     }
   }
-  encode = data => {
+  encode = (data) => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&')
+      .join('&');
   }
   handleSubmit = event => {
     event.preventDefault()
@@ -185,6 +184,12 @@ class HomeIndex extends React.Component {
                       type="submit"
                       value="Invia"
                       classname="button"
+                      name="contact" 
+                      form-name="contact" 
+                      method="post"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                      action="/pages/success"
                     />
                   </li>
                 </ul>
