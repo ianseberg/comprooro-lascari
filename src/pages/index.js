@@ -7,10 +7,11 @@ import Layout from '../components/layout'
 class HomeIndex extends React.Component {
   constructor(props) {
     super(props)
+    this.ContactForm = React.createRef()
     this.state = {
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     }
   }
   encode = (data) => {
@@ -21,11 +22,11 @@ class HomeIndex extends React.Component {
   handleSubmit = event => {
     event.preventDefault()
     const form = this.ContactForm.current
-    fetch('/', {
+    fetch("/", {
       method: 'post',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'contact': form.getAttribute('name'),
+        'form-name': form.getAttribute('name'),
         ...this.state,
       }),
     })
