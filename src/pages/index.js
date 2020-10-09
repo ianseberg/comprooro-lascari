@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 class HomeIndex extends React.Component {
   constructor(props) {
     super(props)
-    this.ContactForm = React.createRef()
+    this.ContattaciForm = React.createRef()
     this.state = {
       name: '',
       email: '',
@@ -21,7 +21,7 @@ class HomeIndex extends React.Component {
   }
   handleSubmit = event => {
     event.preventDefault()
-    const form = this.ContactForm.current
+    const form = this.ContattaciForm.current
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
