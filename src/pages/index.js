@@ -72,7 +72,7 @@ class HomeIndex extends React.Component {
               <a href="http://www.https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
                 Quotazioni Aggiornate
               </a>
-              . Ritiro Contanti Immediato (fino a 499€).</h3>
+              . Ritiro Contanti Immediato.</h3>
               <h5>Presenti da oltre 60 anni sul territorio, vicini alle vostre
               esigenze; i valori che ci differenziano e ci hanno
               contraddistinto: affidabilità, correttezza, serietà e
