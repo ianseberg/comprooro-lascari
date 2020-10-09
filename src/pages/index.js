@@ -150,7 +150,7 @@ class HomeIndex extends React.Component {
                   data-netlify="true"
                   action="/pages/success"
                 >
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" form-name="contact" value="contact" />
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
