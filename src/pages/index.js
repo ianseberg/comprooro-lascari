@@ -26,7 +26,7 @@ class HomeIndex extends React.Component {
       method: 'post',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'form-name': form.getAttribute('name'),
+        'form-name': form.getAttribute('form-name'),
         ...this.state,
       }),
     })
@@ -185,12 +185,6 @@ class HomeIndex extends React.Component {
                       type="submit"
                       value="Invia"
                       classname="button"
-                      name="contact" 
-                      form-name="contact" 
-                      method="post"
-                      data-netlify="true"
-                      data-netlify-honeypot="bot-field"
-                      action="/pages/success"
                     />
                   </li>
                 </ul>
