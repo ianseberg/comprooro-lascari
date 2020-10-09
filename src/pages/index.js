@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 
 import Layout from '../components/layout'
 
@@ -26,7 +26,7 @@ class HomeIndex extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'contact': form.getAttribute('name'),
+        'contact': form.getAttribute('form-name'),
         ...this.state,
       }),
     })
