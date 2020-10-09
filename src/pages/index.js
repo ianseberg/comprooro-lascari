@@ -68,11 +68,12 @@ class HomeIndex extends React.Component {
                 tempo reale con il <a href="http://www.lbma.org.uk/" target="_blank">
                 fixing di Londra</a>.
                 <br />Scopri quanto vale il tuo oro usato in tempo reale e senza
-              impegno. Ricevi la migliore quotazione sul mercato.{' '}
+              impegno.
+              Ricevi la migliore quotazione sul mercato.{' '}
               <a href="http://www.https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
                 Quotazioni Aggiornate
               </a>
-              . Ritiro Contanti Immediato.</h3>
+              . Ritiro contanti con pagamento immediato (come previsto per Legge).</h3>
               <h5>Presenti da oltre 60 anni sul territorio, vicini alle vostre
               esigenze; i valori che ci differenziano e ci hanno
               contraddistinto: affidabilità, correttezza, serietà e

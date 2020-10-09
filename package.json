@@ -13,15 +13,17 @@
     "gatsby-plugin-react-helmet": "^3.1.7",
     "gatsby-plugin-sass": "^2.1.14",
     "gatsby-plugin-sharp": "^2.6.30",
+    "gatsby-plugin-sitemap": "^2.4.15",
     "gatsby-source-filesystem": "^2.3.27",
     "gatsby-source-notion-database": "^0.6.9",
+    "gatsby-telemetry": "^1.3.38",
     "gatsby-transformer-sharp": "^2.5.13",
     "netlify-cli": "^2.59.2",
     "netlify-form-submit": "^0.1.0",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.1.0",
     "react-images": "^1.0.0",
     "react-netlify-forms": "^1.1.0",
     "smooth-scroll": "^16.1.3"
@@ -31,16 +33,14 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gatsby build && gh-pages -d public --branch master"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ianseberg/comprooro-lascari"
   }
 }

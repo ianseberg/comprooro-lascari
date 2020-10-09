@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Compro Oro e Argento - Lascari (Palermo)",
     author: "1000 Sunny",
-    description: "Compro Oro Lascari (Palermo) è specializzata nella compravendita di oro, argento e oggetti preziosi. Da oltre 60 anni, riusciamo sempre a fornire la migliore quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in tempo reale con il fixing di Londra"
+    description: "Compro Oro Lascari (Palermo) è specializzata nella compravendita di oro, argento e oggetti preziosi. Da oltre 60 anni, riusciamo sempre a fornire la migliore quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in tempo reale con il fixing di Londra",
+    siteUrl: `https://www.comproorolascari.com`,
   },
   plugins: [
     {
@@ -13,7 +14,7 @@ module.exports = {
         // Include GTM in development.
         //
         // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: false,
+        includeInDevelopment: true,
   
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
@@ -56,6 +57,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-offline'
   ],
 }
