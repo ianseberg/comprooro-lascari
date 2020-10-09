@@ -81,7 +81,7 @@ class HomeIndex extends React.Component {
             </p>
             <ul className="actions">
               <li>
-                <a href={`#three`} target="_blank" className="button">
+                <a href={`#contattaci`} target="_blank" className="button">
                   Dicci di cosa hai bisogno
                 </a>
               </li>
@@ -133,7 +133,7 @@ class HomeIndex extends React.Component {
             </ul>
           </section>
 
-          <section id="three">
+          <section id="contattaci">
             <h3>Contattaci</h3>
             <h4>
               Per informazioni o per prenotare degli appuntamenti per
@@ -146,8 +146,8 @@ class HomeIndex extends React.Component {
                 <form
                   name="contattaci"
                   method="POST"
-                  action="/success"
                   data-netlify="true"
+                  action="/success"
                 >
                   <input type="hidden" name="form-name" value="contattaci" />
                   <div className="row uniform 50%">
@@ -183,6 +183,7 @@ class HomeIndex extends React.Component {
                       type="submit"
                       value="Invia"
                       classname="button"
+                      action="/success"
                     />
                   </li>
                 </ul>
