@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, navigate } from 'gatsby'
-
+import PropTypes from 'prop-types';
 import Layout from '../components/layout'
 
 class HomeIndex extends React.Component {
@@ -145,13 +145,14 @@ class HomeIndex extends React.Component {
               <div className="8u 12u$(small)">
                 <form
                   name="contact" 
-                  form-name="contact" 
+                  form="contact" 
                   method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                   action="/pages/success"
                 >
-                  <input type="hidden" name="contact" form-name="contact" value="contact" />
+                  <input type="hidden" name="contact" form="contact" value="contact" />
+                  <input type="hidden" name="bot-field" value="" />
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -186,7 +187,7 @@ class HomeIndex extends React.Component {
                       value="Invia"
                       classname="button"
                       name="contact" 
-                      form-name="contact" 
+                      form="contact" 
                       method="post"
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
