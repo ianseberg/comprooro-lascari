@@ -42,6 +42,7 @@ module.exports = {
       }
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
