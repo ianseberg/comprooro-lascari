@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { navigate } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 
 import Layout from '../components/layout'
 
@@ -23,10 +23,10 @@ class HomeIndex extends React.Component {
     event.preventDefault()
     const form = this.ContactForm.current
     fetch('/', {
-      method: 'POST',
+      method: 'post',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'contact': form.getAttribute('form-name'),
+        'contact': form.getAttribute('name'),
         ...this.state,
       }),
     })
@@ -144,13 +144,14 @@ class HomeIndex extends React.Component {
             <div className="row">
               <div className="8u 12u$(small)">
                 <form
+                  name="contact" 
                   form-name="contact" 
-                  data-netlify-honeypot="bot-field"
                   method="post"
                   data-netlify="true"
+                  data-netlify-honeypot="bot-field"
                   action="/pages/success"
                 >
-                  <input type="hidden" form-name="contact" value="contact" />
+                  <input type="hidden" name="contact" form-name="contact" value="contact" />
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
