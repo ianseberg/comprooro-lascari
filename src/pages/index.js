@@ -1,4 +1,4 @@
-import React, {useState, setState, handleChange, state, encode} from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, navigate } from 'gatsby'
 import PropTypes from 'prop-types';
@@ -14,34 +14,26 @@ class HomeIndex extends React.Component {
       message: '',
     }
   }
-  encode(data) {
+  encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&');
   }
-
-    ContactForm() {
-    const [state, setState] = useState({})
-  
-    handleChange = (e) => {
-      setState({ ...state, [e.target.name]: e.target.value })
-    }}
-
-  handleSubmit = (e) => {
-    e.preventDefault()
-    const form = e.target
+  handleSubmit = event => {
+    event.preventDefault()
+    const form = this.ContactForm.current
     fetch("/", {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
+      body: this.encode({
         'form-name': form.getAttribute('name'),
-        ...state,
+        ...this.state,
       }),
     })
       .then(() => navigate('/success'))
       .catch(error => alert(error))
 
-    setState({
+    this.setState({
       name: '',
       email: '',
       message: '',
@@ -155,17 +147,13 @@ class HomeIndex extends React.Component {
               <div className="8u 12u$(small)">
                 <form
                   name="contact"
-                  value="contact"
                   method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                   action="/success"
-                  href="`/success`"
-                  target="_blank"
-                  onSubmit="handleSubmit"
                 >
                   <input type="hidden" name="form-name" value="contact" netlify netlify-honeypot="bot-field" hidden />
-                  <input type="hidden" name="bot-field" form="contact" value="contact" />
+                  <input type="hidden" name="bot-field" />
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -173,7 +161,6 @@ class HomeIndex extends React.Component {
                         name="name"
                         id="name"
                         placeholder="Nome"
-                        onChange={handleChange}
                       />
                     </div>
                     <div className="6u 12u$(xsmall)">
@@ -182,7 +169,6 @@ class HomeIndex extends React.Component {
                         name="email"
                         id="email"
                         placeholder="Telefono od Email"
-                        onChange={handleChange}
                       />
                     </div>
                     <div className="12u">
@@ -191,14 +177,12 @@ class HomeIndex extends React.Component {
                         id="message"
                         placeholder="Messaggio"
                         rows="4"
-                        onChange={handleChange}
                       ></textarea>
                     </div>
                   </div>
-                
                 <ul className="actions" style={{ marginTop: 30 }}>
                   <li>
-                    <input
+                    <button><input
                       type="submit"
                       value="Invia"
                       classname="button"
@@ -208,9 +192,7 @@ class HomeIndex extends React.Component {
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
                       action="/success"
-                      href="{`/success`}"
-                      target="_blank"
-                    />
+                    /></button>
                   </li>
                 </ul>
                 </form>
