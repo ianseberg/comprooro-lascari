@@ -67,13 +67,14 @@ class HomeIndex extends React.Component {
                 quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in
                 tempo reale con il <a href="http://www.lbma.org.uk/" target="_blank">
                 fixing di Londra</a>.
-                <br />Scopri quanto vale il tuo oro usato in tempo reale e senza
+                <br /><br />Scopri quanto vale il tuo oro usato in tempo reale e senza
               impegno.
-              Ricevi la migliore quotazione sul mercato.{' '}
-              <a href="http://www.https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
+              <br /><br />Ricevi la migliore quotazione sul mercato.{' '}
+              <br /><br /><a href="http://www.https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
                 Quotazioni Aggiornate
               </a>
-              . Ritiro contanti con pagamento immediato (come previsto per Legge).</h3>
+              .
+              <br /><br />Ritiro contanti con pagamento immediato (come previsto per Legge).</h3>
               <h5>Presenti da oltre 60 anni sul territorio, vicini alle vostre
               esigenze; i valori che ci differenziano e ci hanno
               contraddistinto: affidabilità, correttezza, serietà e
@@ -149,10 +150,12 @@ class HomeIndex extends React.Component {
                   method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
-                  action="/pages/success"
+                  action="/success"
+                  href="{`/success`}"
+                  target="_blank"
                 >
                   <input type="hidden" name="contact" form="contact" value="contact" />
-                  <input type="hidden" name="bot-field" value="" />
+                  <input type="hidden" name="bot-field" value="contact" />
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -192,6 +195,8 @@ class HomeIndex extends React.Component {
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
                       action="/success"
+                      href="{`/success`}"
+                      target="_blank"
                     />
                   </li>
                 </ul>
