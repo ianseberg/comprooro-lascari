@@ -69,8 +69,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'comprooro-lascari',
+        short_name: 'oro-lascari',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
@@ -82,5 +82,11 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-offline',
     'gatsby-plugin-htaccess',
-  ],
+    {
+      resolve: `gatsby-plugin-html-attributes`,
+      options: {
+        lang: 'it',
+      }
+    },
+  ]
 }
