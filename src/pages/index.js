@@ -26,7 +26,7 @@ class HomeIndex extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: this.encode({
-        'form-name': form.getAttribute('form'),
+        'form-name': form.getAttribute('name'),
         ...this.state,
       }),
     })
@@ -146,8 +146,8 @@ class HomeIndex extends React.Component {
             <div className="row">
               <div className="8u 12u$(small)">
                 <form
-                  name="contact" 
-                  form="contact" 
+                  name="contact"
+                  value="contact"
                   method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
@@ -155,8 +155,8 @@ class HomeIndex extends React.Component {
                   href="{`/success`}"
                   target="_blank"
                 >
-                  <input type="hidden" name="contact" form="contact" value="contact" />
-                  <input type="hidden" name="bot-field" value="contact" />
+                  <input type="hidden" name="form-name" value="contact" netlify netlify-honeypot="bot-field" hidden />
+                  <input type="hidden" name="bot-field" form="contact" value="contact" />
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
