@@ -71,7 +71,7 @@ class HomeIndex extends React.Component {
                 <br /><br />Scopri quanto vale il tuo oro usato in tempo reale e senza
               impegno.
               <br /><br />Ricevi la migliore quotazione sul mercato.{' '}
-              <br /><br /><a href="http://www.https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
+              <br /><br /><a href="https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
                 Quotazioni Aggiornate
               </a>
               .
