@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 
 class PrivacyPolicy extends React.Component {
   render() {
-    const siteTitle = 'Gatsby Starter - Strata'
+    const siteTitle = 'Compro Oro Lascari (Palermo)'
     const siteDescription = 'Site description'
 
     return (
