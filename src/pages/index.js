@@ -56,11 +56,12 @@ class HomeIndex extends React.Component {
           <section id="one">
             <header className="major">
               <h2>
-                Lo specialista nella compravendita di oro, argento e metalli
+                Compro Oro Lascari (Palermo): Lo specialista nella compravendita di oro, argento e metalli
                 preziosi, anche di marca.</h2>
             </header>
             <p>
               <hr />
+            
               <h3>Compro Oro Lascari (Palermo) è un'azienda amministrata
                 da professionisti seri ed affidabili, specializzati nella
                 compravendita di oro, argento e oggetti preziosi, anche di
@@ -110,7 +111,7 @@ class HomeIndex extends React.Component {
             <strong>dom: Chiuso</strong>
             <br />
             <hr />
-            <h2>La quotazione più alta del comprensorio per oro ed argento</h2>
+            <h2>La quotazione di oro e argento più alta del comprensorio</h2>
             <ul className="actions">
               <li>
                 <a
