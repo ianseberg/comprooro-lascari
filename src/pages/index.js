@@ -41,7 +41,7 @@ class HomeIndex extends React.Component {
   }
 
   render() {
-    const siteTitle = 'Compro Oro e Argento - Lascari (Palermo)'
+    const siteTitle = 'Compro Oro e Argento - Lascari (Palermo) - Sicilia'
     const siteDescription = 'Compro Oro Lascari (Palermo) è specializzata nella compravendita di oro, argento e oggetti preziosi. Da oltre 60 anni, riusciamo sempre a fornire la migliore quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in tempo reale con il fixing di Londra'
 
     return (
@@ -85,7 +85,7 @@ class HomeIndex extends React.Component {
             <ul className="actions">
               <li>
                 <a href={`#contact`} target="_blank" className="button">
-                  Dicci di cosa hai bisogno
+                  Per informazioni ed appuntamenti
                 </a>
               </li>
             </ul>
