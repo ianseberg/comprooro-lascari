@@ -161,7 +161,7 @@ class HomeIndex extends React.Component {
                         type="email"
                         name="email"
                         id="email"
-                        placeholder="Telefono od Email"
+                        placeholder="Email"
                       />
                     </div>
                     <div className="12u">
@@ -214,14 +214,14 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-mobile">
                       <span className="label">Telefono</span>
                     </h3>
-                    <a href="tel:+393339253880">Chiamaci al 3339253880</a>
+                    <a href="tel:+393339253880">Clicca per chiamaci al 3339253880</a>
                   </li>
                   <li>
                     <h3 className="icon fa-whatsapp">
                       <span className="label">Whatsapp</span>
                     </h3>
                     <a href="https://api.whatsapp.com/send?phone=393339253880">
-                      Scrivici su Whatsapp
+                      Clicca per scriverci su Whatsapp
                     </a>
                   </li>
                   <li>
@@ -229,7 +229,7 @@ class HomeIndex extends React.Component {
                       <span className="label">Email</span>
                     </h3>
                     <a href="https://m.me/comprorolascari">
-                      Scrivici su Facebook Messenger
+                      Clicca per scriverci su Facebook Messenger
                     </a>
                   </li>
                 </ul>
