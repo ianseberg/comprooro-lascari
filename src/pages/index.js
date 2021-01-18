@@ -173,7 +173,7 @@ class HomeIndex extends React.Component {
                       ></textarea>
                     </div>
                   </div>
-                <ul className="actions" style={{ marginTop: 30 }}>
+                <ul className="actions">
                 <button>
                   <li>
                       <input
