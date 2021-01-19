@@ -174,7 +174,6 @@ class HomeIndex extends React.Component {
                     </div>
                   </div>
                 <ul className="actions" style={{ marginTop: 30 }}>
-                <button>
                   <li>
                       <input
                       name="contact"
@@ -182,15 +181,12 @@ class HomeIndex extends React.Component {
                       method="POST"
                       value="Invia"
                       classname="button"
-                      name="contact" 
-                      form="contact" 
                       method="post"
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
                       action="/success"
                     />
                   </li>
-                </button>
                 </ul>
                 </form>
               </div>
