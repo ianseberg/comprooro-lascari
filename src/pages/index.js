@@ -182,8 +182,6 @@ class HomeIndex extends React.Component {
                       method="POST"
                       value="Invia"
                       classname="button"
-                      name="contact" 
-                      form="contact" 
                       method="post"
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
