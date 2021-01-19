@@ -173,7 +173,6 @@ class HomeIndex extends React.Component {
                       ></textarea>
                     </div>
                   </div>
-                    </form>
                 <ul className="actions" style={{ marginTop: 30 }}>
                   <li>
                       <input
@@ -189,6 +188,7 @@ class HomeIndex extends React.Component {
                     />
                   </li>
                 </ul>
+                </form>
               </div>
               <div className="4u 12u$(small)">
                 <ul className="labeled-icons">
