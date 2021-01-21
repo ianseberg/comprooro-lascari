@@ -1,24 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, navigate } from 'gatsby'
-import PropTypes from 'prop-types';
 import Layout from '../components/layout'
 
 class HomeIndex extends React.Component {
-  constructor(props) {
-    super(props)
-    this.ContactForm = React.createRef()
-    this.state = {
-      name: '',
-      email: '',
-      message: '',
-    }
-  }
+
   encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&');
   }
+  
   handleSubmit = event => {
     event.preventDefault()
     const form = this.ContactForm.current
@@ -177,14 +169,18 @@ class HomeIndex extends React.Component {
                   <li>
                       <a
                       type="hidden"
-                      name="contact"
-                      value="contact"
+                      name="form-name"
+                      value="Invia"
                       classname="button"
                       type="submit"
                       method="POST"
+<<<<<<< HEAD
+                      action="/success" />
+=======
                       href="/success">
                       Invia
                       </a>
+>>>>>>> 0548b3cf5c30e0d56e94a800fe2a697bb7f6793d
                   </li>
                 </ul>
                 </form>
