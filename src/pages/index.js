@@ -170,8 +170,6 @@ class HomeIndex extends React.Component {
                     <input type="hidden" name="form-name" value="contact" />
                       <button
                       type="submit"
-                      name="contact"
-                      value="contact"
                       classname="button"
                       method="POST">Invia!</button>
                   </li>
