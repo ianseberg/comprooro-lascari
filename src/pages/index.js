@@ -175,7 +175,7 @@ class HomeIndex extends React.Component {
                   </div>
                 <ul className="actions" style={{ marginTop: 30 }}>
                   <li>
-                      <input
+                      <a
                       type="hidden"
                       name="contact"
                       value="contact"
@@ -184,7 +184,7 @@ class HomeIndex extends React.Component {
                       method="POST"
                       href="/success">
                       Invia
-                      </input>
+                      </a>
                   </li>
                 </ul>
                 </form>
