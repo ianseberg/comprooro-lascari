@@ -167,20 +167,14 @@ class HomeIndex extends React.Component {
                   </div>
                 <ul className="actions" style={{ marginTop: 30 }}>
                   <li>
-                      <a
+                      <input
                       type="hidden"
                       name="form-name"
                       value="Invia"
                       classname="button"
                       type="submit"
                       method="POST"
-<<<<<<< HEAD
                       action="/success" />
-=======
-                      href="/success">
-                      Invia
-                      </a>
->>>>>>> 0548b3cf5c30e0d56e94a800fe2a697bb7f6793d
                   </li>
                 </ul>
                 </form>
