@@ -167,10 +167,11 @@ class HomeIndex extends React.Component {
                   </div>
                 <ul className="actions" style={{ marginTop: 30 }}>
                   <li>
+                    <input type="hidden" name="form-name" value="contact" />
                       <button
                       type="submit"
                       name="contact"
-                      value="contactv"
+                      value="contact"
                       classname="button"
                       method="POST">Invia!</button>
                   </li>
