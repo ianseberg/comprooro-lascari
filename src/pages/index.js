@@ -175,6 +175,7 @@ class HomeIndex extends React.Component {
                   </li>
                 </ul>
                 </form>
+
               </div>
               <div className="4u 12u$(small)">
                 <ul className="labeled-icons">
