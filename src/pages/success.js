@@ -31,7 +31,7 @@ export default Success;
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "pic11.jpg" }) {
+    imageOne: file(relativePath: { eq: "compro oro argento metalli lascari palermo sicilia.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
