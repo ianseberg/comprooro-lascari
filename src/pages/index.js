@@ -31,6 +31,15 @@ class HomeIndex extends React.Component {
       message: '',
     })
   }
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+}
+
+handleClick() {
+    window.gtag("event", "conversion", { send_to: ["AW-939929396/3afWCKCSmvEBELTemMAD"]})
+    window.gtag("event", "phone_conversion_number", { send_to: ["AW-939929396/3afWCKCSmvEBELTemMAD", +393339253880]})
+}    
 
   render() {
     const siteTitle = 'Compro Oro e Argento - Lascari (Palermo) - Sicilia'
