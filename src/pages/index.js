@@ -58,7 +58,7 @@ handleClick() {
             <header className="major">
               <h2>
                 Compro Oro Lascari (Palermo): Lo specialista nella compravendita di oro, argento e metalli
-                preziosi, anche di marca.</h2>
+                preziosi, anche di marca, o monete.</h2>
             </header>
             <p>
               <hr />
@@ -66,22 +66,23 @@ handleClick() {
               <h3>Compro Oro Lascari (Palermo) è un'azienda amministrata
                 da professionisti seri ed affidabili, specializzati nella
                 compravendita di oro, argento e oggetti preziosi, anche di
-                marca. Da oltre 60 anni, riusciamo sempre a fornire la migliore
+                marca, o monete. Da oltre 60 anni, riusciamo sempre a fornire la migliore
                 quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in
                 tempo reale con il <a href="http://www.lbma.org.uk/" target="_blank">
-                fixing di Londra</a>.
+                fixing di Londra</a> per l'oro (od argento) puro al grammo.
                 <br /><br />Scopri quanto vale il tuo oro usato in tempo reale e senza
               impegno.
               <br /><br />Ricevi la migliore quotazione sul mercato.{' '}
               <br /><br /><a href="https://mercati.ilsole24ore.com/materie-prime/commodities/oro/GLDEUR/" target="_blank">
-                Quotazioni Aggiornate
+                Quotazioni Aggiornate ad oggi
               </a>
-              .
+              . Chiedi una valutazione.
               <br /><br />Ritiro contanti con pagamento immediato (come previsto per Legge).</h3>
-              <h5>Presenti da oltre 60 anni sul territorio, vicini alle vostre
+              <hr />
+              <h4>Presenti da oltre 60 anni sul territorio, vicini alle vostre
               esigenze; i valori che ci differenziano e ci hanno
               contraddistinto: affidabilità, correttezza, serietà e
-              riservatezza.</h5>
+              riservatezza.</h4>
             </p>
             <ul className="actions">
               <li>
