@@ -42,8 +42,8 @@ handleClick() {
 }    
 
   render() {
-    const siteTitle = 'Compro Oro e Argento - Lascari (Palermo) - Sicilia'
-    const siteDescription = 'Compro Oro Lascari (Palermo) è specializzata nella compravendita di oro, argento e oggetti preziosi. Da oltre 60 anni, riusciamo sempre a fornire la migliore quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in tempo reale con il fixing di Londra'
+    const siteTitle = 'Compro Oro e Argento a Lascari - Palermo - Sicilia'
+    const siteDescription = 'Compro Oro Lascari è specializzata nella compravendita di oro, argento e oggetti preziosi in provincia di Palermo. Da oltre 60 anni, riusciamo sempre a fornire la migliore quotazione relativa a tutti i metalli preziosi come oro od argento, aggiornata in tempo reale con il fixing di Londra'
 
     return (
       <Layout>
@@ -57,8 +57,8 @@ handleClick() {
           <section id="one">
             <header className="major">
               <h2>
-                Compro Oro Lascari (Palermo): Lo specialista nella compravendita di oro, argento e metalli
-                preziosi, anche di marca, o monete.</h2>
+                Compro Oro Lascari (Palermo): Lo specialista nella compravendita di oro, argento, metalli
+                preziosi, anche di marca, e monete.</h2>
             </header>
             <p>
               <hr />
@@ -113,7 +113,7 @@ handleClick() {
             <strong>dom: Chiuso</strong>
             <br />
             <hr />
-            <h2>La quotazione di oro e argento più alta del comprensorio</h2>
+            <h1>La quotazione di oro e argento più alta del comprensorio</h1>
             <ul className="actions">
               <li>
                 <a
@@ -139,13 +139,13 @@ handleClick() {
           </section>
 
           <section id="contact">
-            <h3>Contattaci</h3>
-            <h4>
-              Per informazioni o per prenotare degli appuntamenti per
-              valutazioni compila il form qui sotto oppure chiamaci o mandaci
+            <h1><strong>Contatta Compro Oro Lascari</strong></h1>
+            <h2>
+              <i>Per informazioni sulla quotazione dell'oro o per prenotare un appuntamento per
+              una valutazione di metalli preziosi compila il form qui sotto oppure chiamaci o mandaci
               una mail. Cliccando sull'indirizzo potrai invece vedere dove ci
-              troviamo!
-            </h4>
+              troviamo!</i>
+            </h2>
             <div className="row">
               <div className="8u 12u$(small)">
                 <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
